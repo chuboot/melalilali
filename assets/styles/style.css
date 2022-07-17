@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all 0.2s linear;
 }
 
 :root {
@@ -231,51 +232,6 @@ main {
   margin-bottom: 30px;
 }
 
-footer {
-  margin-top: 0;
-  padding: 25px 0;
-  background-color: #262626;
-}
-
-footer .col-ft-l {
-  width: 40%;
-}
-footer .col-ft-r {
-  display: flex;
-  flex-direction: column;
-  justify-items: end;
-  width: 40%;
-  text-align: right;
-  /* border: 2px solid pink; */
-}
-
-footer .brand-logo {
-  opacity: 50%;
-}
-
-footer p {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #fff;
-  opacity: 40%;
-  font-weight: 300;
-}
-
-.w-social {
-  display: flex;
-  width: 30%;
-  margin-left: auto;
-  justify-content: space-between;
-  color: #6f6f6f;
-}
-
-.w-social a {
-  color: #6f6f6f;
-}
-.w-social a:hover {
-  color: var(--greenlake);
-}
-
 .content-aside {
   display: flex;
   justify-content: space-between;
@@ -353,6 +309,59 @@ td {
   z-index: -999;
 }
 
+footer {
+  padding: 25px 0;
+  background-color: #262626;
+}
+
+footer .row-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .col-ft-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 50%;
+}
+footer .col-ft-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex: 50%;
+  text-align: right;
+  /* border: 2px solid pink; */
+}
+
+footer .brand-logo {
+  opacity: 50%;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 40%;
+  font-weight: 300;
+}
+
+.w-social {
+  display: flex;
+  width: 20%;
+  margin-left: auto;
+  justify-content: space-between;
+  color: #6f6f6f;
+}
+
+.w-social a {
+  color: #6f6f6f;
+}
+.w-social a:hover {
+  color: var(--greenlake);
+}
+
 @media screen and (max-width: 768px) {
   .bg-hero {
     max-width: 200%;
@@ -390,13 +399,27 @@ td {
     flex-direction: column;
   }
 
+  .row-container {
+    flex-direction: column;
+  }
   .col-ft-l,
   .col-ft-r {
-    width: 100%;
+    flex: 100%;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .w-social {
+    width: 40%;
+    margin-left: 0;
   }
 
   .aside-l,
   .aside-r {
     width: 100%;
+  }
+
+  .aside-r section {
+    margin-left: 0;
   }
 }
