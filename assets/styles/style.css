@@ -23,10 +23,20 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  color: #fff;
 
-  background-color: #eee;
-  opacity: 60%;
+  /* background-color: #eee; */
+  /* opacity: 60%; */
   z-index: 3;
+}
+
+.bg-white-color {
+  transition: all 1s;
+  background-color: var(--greenlake);
+}
+.text-grey-color {
+  transition: all 1s;
+  color: grey;
 }
 
 .container {
@@ -45,8 +55,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 0;
+  margin: 2rem 0;
   overflow-x: hidden;
+}
+
+.nav-links {
+  color: #3c921e !important;
 }
 
 nav li {
@@ -57,7 +71,7 @@ nav li {
 
 nav li a {
   font-size: 18px;
-  color: #6f6f6f;
+  /* color: #fff; */
   text-decoration: none;
 }
 nav li a:hover {
@@ -78,7 +92,7 @@ main {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: gray;
+
   opacity: 75%;
 }
 
@@ -97,10 +111,6 @@ main {
   max-width: 50%;
   /* border: 1px solid blue; */
   padding: 30px 0 30px 90px;
-}
-
-.destination {
-  margin-top: 200px;
 }
 
 .hero h5,
@@ -181,14 +191,18 @@ main {
 .card img {
   width: 100%;
 }
-
+.destination,
 .aboutus,
 .experience,
 .subcription {
-  margin-top: 100px;
+  padding-top: 8rem;
   display: flex;
   justify-content: space-between;
   /* border: 1px solid green; */
+}
+
+.destination {
+  flex-direction: column;
 }
 
 .col-right {
@@ -263,6 +277,7 @@ main {
   justify-content: space-between;
   /* border: 1px solid pink; */
   margin-top: 150px;
+  overflow-y: hidden;
 }
 
 .aside-l {
@@ -363,6 +378,7 @@ footer .col-ft-r {
 
 footer .brand-logo {
   opacity: 50%;
+  color: #fff;
 }
 
 footer p {
@@ -387,6 +403,10 @@ footer p {
 .w-social a:hover {
   color: var(--greenlake);
 }
+
+/* ================================================================== */
+/* ========================Media Query=============================== */
+/* ================================================================== */
 
 @media screen and (max-width: 768px) {
   .bg-hero {
