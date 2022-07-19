@@ -31,29 +31,33 @@
             <div class="line3"></div>
           </div>
         </nav>
-        <img src="assets/img/Rectangle 3.jpg" alt="" class="bg-hero" />
-        <div class="cont">
-          <div class="hero">
-            <h5>Welcome to Bali</h5>
-            <h1>
-              Explore.<br />
-              Experience.<br />
-              Enjoy.<br />
-              Bali Paradise Island.
-            </h1>
-            <h4>--What we Do</h4>
-            <p>
-              We are special in around Bali Island destination. We provide a
-              wide range of transportation services. From airport pick up to
-              private villa by car, we have it all covered. Travel with us and
-              you'll see how personal our service can be.
-            </p>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
       </div>
     </header>
     <main>
+      <article>
+        <div class="container">
+          <img src="assets/img/Rectangle 3.jpg" alt="" class="bg-hero" />
+          <div class="cont">
+            <div class="hero">
+              <h5>Welcome to Bali</h5>
+              <h1>
+                Explore.<br />
+                Experience.<br />
+                Enjoy.<br />
+                Bali Paradise Island.
+              </h1>
+              <h4>--What we Do</h4>
+              <p>
+                We are special in around Bali Island destination. We provide a
+                wide range of transportation services. From airport pick up to
+                private villa by car, we have it all covered. Travel with us and
+                you'll see how personal our service can be.
+              </p>
+              <button class="btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </article>
       <article>
         <div class="container">
           <section class="destination" id="destination">
@@ -253,9 +257,16 @@
     <script>
       let btn = document.querySelector(".burger-btn");
       let menu = document.querySelector(".nav-links");
+      let links = document.querySelectorAll(".nav-links li a");
       btn.addEventListener("click", function () {
         menu.classList.toggle("nav-active");
       });
+
+      for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function () {
+          menu.classList.toggle("nav-active");
+        });
+      }
     </script>
   </body>
 </html>
