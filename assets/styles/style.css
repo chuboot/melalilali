@@ -171,11 +171,6 @@ main {
   z-index: 1;
 }
 
-.bg-hero img {
-  width: 100%;
-  object-fit: cover;
-}
-
 .row {
   display: flex;
   /* border: 1px solid pink; */
@@ -471,6 +466,12 @@ footer p {
   }
   nav li a:hover {
     color: #000;
+  }
+
+  .bg-hero {
+    /* right: 0; */
+    width: 100%;
+    height: auto;
   }
 
   .burger-btn {
