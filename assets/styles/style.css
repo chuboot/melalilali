@@ -4,18 +4,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all 0.3s linear;
 }
 
 :root {
   --greenlake: #3c921e;
 }
 
+html {
+  scroll-padding-top: 1.5rem;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   overflow-x: hidden;
-  scroll-behavior: smooth;
-  transition: all 0.7s;
 }
 
 header {
@@ -31,8 +35,7 @@ header {
 }
 
 .bg-white-color {
-  transition: all 1s;
-  background-color: var(--greenlake);
+  background-color: #262626;
 }
 .text-grey-color {
   transition: all 1s;
@@ -55,12 +58,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   overflow-x: hidden;
-}
-
-.nav-links {
-  color: #3c921e !important;
 }
 
 nav li {
@@ -71,15 +70,16 @@ nav li {
 
 nav li a {
   font-size: 18px;
-  /* color: #fff; */
+  color: #6f6f6f;
   text-decoration: none;
 }
 nav li a:hover {
-  color: #000;
+  font-weight: 600;
+  color: var(--greenlake);
 }
 
 main {
-  background-color: floralwhite;
+  /* background-color: floralwhite; */
   padding-top: 10rem;
 }
 
@@ -154,6 +154,12 @@ main {
   border-radius: 5px;
   font-weight: 600;
   color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--greenlake);
+  opacity: 80%;
 }
 
 .bg-hero {
@@ -163,6 +169,11 @@ main {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.bg-hero img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .row {
@@ -474,11 +485,25 @@ footer p {
     /* border: 1px solid green; */
   }
 
+  .experience .col-left img {
+    margin-bottom: 2rem;
+  }
+
   .content-aside {
     flex-direction: column;
   }
 
   .row-container {
+    flex-direction: column;
+  }
+
+  .col-right,
+  .col-left {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .key {
     flex-direction: column;
   }
   .col-ft-l,

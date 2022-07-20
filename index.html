@@ -271,14 +271,12 @@
 
       //change bg when scroll
       let navbar = document.querySelector("header");
-      let navbarLi = document.querySelector("nav li a");
 
       window.addEventListener("scroll", function () {
         let valueScroll = window.scrollY;
         console.log(valueScroll);
-        if (valueScroll < 100) {
+        if (valueScroll < 70) {
           navbar.classList.remove("bg-white-color");
-          navbarLi.classList.add("text-grey-color");
         } else {
           navbar.classList.add("bg-white-color");
         }
