@@ -271,11 +271,19 @@ main {
 
 .inputemail {
   margin-top: 30px;
+  min-width: 50%;
   padding: 15px;
   border: 1px solid var(--greenlake);
   color: var(--greenlake);
   background-color: rgb(143, 220, 115, 0.3);
   display: block;
+}
+
+::placeholder {
+  color: var(--greenlake);
+}
+.inputemail:focus {
+  border: 1px solid var(--greenlake);
 }
 
 .subcription .btn {
