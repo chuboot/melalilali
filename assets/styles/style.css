@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap");
 
 * {
   padding: 0;
@@ -12,13 +14,13 @@
 }
 
 html {
-  scroll-padding-top: 1.5rem;
+  scroll-padding-top: 0.8rem;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   overflow-x: hidden;
 }
 
@@ -28,18 +30,7 @@ header {
   left: 0;
   right: 0;
   color: #fff;
-
-  /* background-color: #eee; */
-  /* opacity: 60%; */
   z-index: 3;
-}
-
-.bg-white-color {
-  background-color: #262626;
-}
-.text-grey-color {
-  transition: all 1s;
-  color: grey;
 }
 
 .container {
@@ -47,13 +38,8 @@ header {
   margin: 0 auto;
   overflow-x: hidden;
 }
-.cont {
-  display: flex;
-  justify-content: end;
-  /* border: 2px solid green; */
-  overflow-x: hidden;
-}
 
+/* ============NAV BAR================ */
 nav {
   display: flex;
   justify-content: space-between;
@@ -78,21 +64,10 @@ nav li a:hover {
   color: var(--greenlake);
 }
 
-main {
-  /* background-color: floralwhite; */
-  padding-top: 10rem;
-}
-
-.active {
-  color: #000;
-  font-weight: 600;
-}
-
 .brand-logo {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 1.5px;
-
   opacity: 75%;
 }
 
@@ -107,44 +82,7 @@ main {
   display: none;
 }
 
-.hero {
-  max-width: 50%;
-  /* border: 1px solid blue; */
-  padding: 30px 0 30px 90px;
-}
-
-.hero h5,
-.destination h5,
-.aboutus h5,
-.subcription h5,
-.experience h5 {
-  color: var(--greenlake);
-}
-
-.hero h1,
-.destination h1,
-.aboutus h1,
-.subcription h1,
-.experience h1 {
-  line-height: 125%;
-  margin: 20px 0;
-  font-size: 42px;
-}
-.hero h4 {
-  margin: 25px 0;
-  font-size: 22px;
-  color: var(--greenlake);
-}
-
-.hero p,
-.aboutus p,
-.subcription p,
-.experience p {
-  color: #6f6f6f;
-  font-weight: 300;
-  line-height: 30px;
-}
-
+/* ================BUTTON================== */
 .btn {
   margin-top: 30px;
   margin-bottom: 40px;
@@ -162,31 +100,79 @@ main {
   opacity: 80%;
 }
 
+/* ==============MAIN CONTENT================ */
+
+main {
+  padding-top: 10rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: end;
+  overflow-x: hidden;
+}
+
 .bg-hero {
   position: absolute;
   max-width: 50%;
-  /* height: 100vh; */
   top: 0;
   left: 0;
   z-index: 1;
 }
 
+.hero-tagline {
+  max-width: 50%;
+  padding: 25px 0 25px 90px;
+}
+
+.hero-tagline h5,
+.destination h5,
+.aboutus h5,
+.subcription h5,
+.experience h5 {
+  color: var(--greenlake);
+}
+
+.hero-tagline h1,
+.destination h1,
+.aboutus h1,
+.subcription h1,
+.experience h1 {
+  line-height: 125%;
+  margin: 20px 0;
+  font-family: "Caladea", serif;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.hero-tagline h4 {
+  margin: 25px 0;
+  font-size: 1.5rem;
+  color: var(--greenlake);
+}
+
+.hero-tagline p,
+.aboutus p,
+.subcription p,
+.experience p {
+  color: #6f6f6f;
+  font-weight: 300;
+  line-height: 30px;
+}
+
 .row {
   display: flex;
-  /* border: 1px solid pink; */
   justify-content: space-between;
 }
+
 .card {
   margin-top: 30px;
-  /* border: 1px solid black; */
-  /* justify-content: space-around; */
-  /* padding-right: 20px; */
   width: 23%;
 }
 
 .card h5 {
   color: #000;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -197,6 +183,7 @@ main {
 .card img {
   width: 100%;
 }
+
 .destination,
 .aboutus,
 .experience,
@@ -204,7 +191,6 @@ main {
   padding-top: 8rem;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid green; */
 }
 
 .destination {
@@ -214,14 +200,13 @@ main {
 .col-right {
   width: 100%;
   padding-left: 30px;
-
-  /* border: 1px solid red; */
 }
+
 .col-left {
   width: 95%;
   padding-right: 20px;
-  /* border: 1px solid purple; */
 }
+
 .col-right img {
   width: 100%;
   border-radius: 10px;
@@ -247,14 +232,11 @@ main {
 }
 
 .key h1 {
-  font-size: 36px;
+  font-size: 2rem;
   margin-bottom: 0;
 }
 
-.subcription .col-left {
-  width: 100%;
-}
-
+.subcription .col-left,
 .subcription .col-right {
   width: 100%;
 }
@@ -277,6 +259,7 @@ main {
 ::placeholder {
   color: var(--greenlake);
 }
+
 .inputemail:focus {
   border: 1px solid var(--greenlake);
 }
@@ -289,7 +272,6 @@ main {
 .content-aside {
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid pink; */
   margin-top: 150px;
   overflow-y: hidden;
 }
@@ -297,10 +279,9 @@ main {
 .aside-l {
   width: 50%;
 }
+
 .aside-r {
   width: 50%;
-  /* padding: 30px 50px; */
-  /* border: 1px solid green; */
   position: relative;
 }
 
@@ -312,8 +293,9 @@ main {
 
 .aside-r h2 {
   color: #fff;
-  font-size: 48px;
+  font-size: 3rem;
 }
+
 .aside-r h4 {
   color: #fff;
   background-color: var(--greenlake);
@@ -331,7 +313,7 @@ main {
 
 .aside-r p {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 300;
   line-height: 170%;
   color: #6f6f6f;
@@ -360,7 +342,6 @@ td {
   background-color: #3c921e;
   height: 50px;
   width: 100%;
-
   z-index: -999;
 }
 
@@ -380,14 +361,13 @@ footer .col-ft-l {
   justify-content: space-between;
   flex: 50%;
 }
+
 footer .col-ft-r {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   flex: 50%;
   text-align: right;
-  /* border: 2px solid pink; */
 }
 
 footer .brand-logo {
@@ -414,6 +394,7 @@ footer p {
 .w-social a {
   color: #6f6f6f;
 }
+
 .w-social a:hover {
   color: var(--greenlake);
 }
@@ -427,7 +408,8 @@ footer p {
     max-width: 200%;
     height: 57vh;
   }
-  .hero {
+
+  .hero-tagline {
     max-width: 100%;
     margin-top: 45vh;
     padding: 0;
@@ -436,9 +418,9 @@ footer p {
   nav {
     width: 100%;
   }
+
   .nav-links {
     position: absolute;
-    /* display: none; */
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     right: 0;
@@ -451,6 +433,7 @@ footer p {
     padding: 150px 30px 50px 30px;
     transform: translateX(100%);
   }
+
   nav li {
     width: 100%;
     text-align: center;
@@ -458,12 +441,13 @@ footer p {
   }
 
   nav li a {
-    font-size: 36px;
+    font-size: 2.2rem;
     font-weight: 700;
     color: #c9c9c9;
     opacity: 0.8;
     z-index: 99;
   }
+
   nav li a:hover {
     color: #000;
   }
@@ -515,6 +499,7 @@ footer p {
   .key {
     flex-direction: column;
   }
+
   .col-ft-l,
   .col-ft-r {
     flex: 100%;
@@ -537,6 +522,11 @@ footer p {
   }
 }
 
+/* ===================ADDITIONAL STYLE==================== */
 .nav-active {
   transform: translateX(0%);
+}
+
+.bg-nav-color {
+  background-color: #262626;
 }

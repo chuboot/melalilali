@@ -34,11 +34,11 @@
       </div>
     </header>
     <main>
-      <article>
+      <article class="hero">
         <div class="container">
           <img src="assets/img/Rectangle 3.jpg" alt="" class="bg-hero" />
-          <div class="cont">
-            <div class="hero">
+          <div class="wrapper">
+            <div class="hero-tagline">
               <h5>Welcome to Bali</h5>
               <h1>
                 Explore.<br />
@@ -276,9 +276,9 @@
         let valueScroll = window.scrollY;
         console.log(valueScroll);
         if (valueScroll < 70) {
-          navbar.classList.remove("bg-white-color");
+          navbar.classList.remove("bg-nav-color");
         } else {
-          navbar.classList.add("bg-white-color");
+          navbar.classList.add("bg-nav-color");
         }
       });
     </script>
