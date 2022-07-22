@@ -411,7 +411,7 @@ footer p {
 
   .hero-tagline {
     max-width: 100%;
-    margin-top: 45vh;
+    margin-top: 75vh;
     padding: 0;
   }
 
@@ -449,11 +449,10 @@ footer p {
   }
 
   nav li a:hover {
-    color: #000;
+    font-weight: 700;
   }
 
   .bg-hero {
-    /* right: 0; */
     width: 100%;
     height: auto;
   }
@@ -462,9 +461,11 @@ footer p {
     display: block;
     z-index: 4;
   }
+
   .row {
     flex-direction: column;
   }
+
   .card {
     width: 100%;
   }
@@ -474,8 +475,7 @@ footer p {
   .subcription {
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
-    /* border: 1px solid green; */
+    align-items: center;
   }
 
   .experience .col-left img {
@@ -519,6 +519,12 @@ footer p {
 
   .aside-r section {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-tagline {
+    margin-top: 45vh;
   }
 }
 
