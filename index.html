@@ -18,7 +18,7 @@
     <header>
       <div class="container">
         <nav>
-          <div class="brand-logo">MELALILALI</div>
+          <div class="brand-logo"><a href=""> MELALILALI</a></div>
           <ul class="nav-links">
             <li><a class="" href="#">Home</a></li>
             <li><a href="#destination">Destinations</a></li>
@@ -36,7 +36,7 @@
     <main>
       <article class="hero">
         <div class="container">
-          <img src="assets/img/Rectangle 3.jpg" alt="" class="bg-hero" />
+          <img src="assets/img/ulundanu.jpg" alt="" class="bg-hero" />
           <div class="wrapper">
             <div class="hero-tagline">
               <h5>Welcome to Bali</h5>
@@ -46,7 +46,7 @@
                 Enjoy.<br />
                 Bali Paradise Island.
               </h1>
-              <h4>--What we Do</h4>
+              <h4>—Let's go for a walk!</h4>
               <p>
                 We are special in around Bali Island destination. We provide a
                 wide range of transportation services. From airport pick up to
@@ -69,7 +69,7 @@
             <div class="row">
               <div class="card">
                 <img src="assets/img/tegallalang.jpg" alt="" />
-                <h5>Tegal Lalang</h5>
+                <h5>Tegallalang Rice Terrace</h5>
                 <p>Gianyar, Bali</p>
               </div>
               <div class="card">
@@ -78,12 +78,12 @@
                 <p>Klungkung, Bali</p>
               </div>
               <div class="card">
-                <img src="assets/img/lempuyanggate.jpg" alt="" />
+                <img src="assets/img/lempuyang.jpg" alt="" />
                 <h5>Lempuyang Gate</h5>
                 <p>Karangasem, Bali</p>
               </div>
               <div class="card">
-                <img src="assets/img/sekumpul.jpg" alt="" />
+                <img src="assets/img/selumpul.jpg" alt="" />
                 <h5>Sekumpul Waterfall</h5>
                 <p>Buleleng, Bali</p>
               </div>
@@ -96,6 +96,7 @@
                 Explore every corner of <br />
                 Bali With Us
               </h1>
+
               <p>
                 Melalilali.com is a travel agency based in Bali, Indonesia. We
                 are the only tour and travel agency that offers a one-stop-shop
@@ -103,11 +104,13 @@
               </p>
               <br />
               <p>
-                Our mission is to make sure our customers have an unforgettable
-                experience during their stay in Bali. We want to make sure that
-                you get to know Bali's culture and nature, which is why we put
-                so much effort into creating packages that are unique,
-                inclusive, and easy to access.
+                <em>Melalilali </em> is a word in Balinese which means "Go for a
+                walk" or traveling/recreation for fun. Our mission is to make
+                sure our customers have an unforgettable experience during their
+                stay in Bali. We want to make sure that you get to know Bali's
+                culture and nature, which is why we put so much effort into
+                creating packages that are unique, inclusive, and easy to
+                access.
               </p>
               <br />
 
@@ -167,13 +170,14 @@
                 fun conversations and unforgettable moments. What are you
                 waiting for? Check it out today!
               </p>
+              <br />
+              <em><p>Join our newsletter and get coupont 20$</p></em>
               <input
                 class="inputemail"
                 type="email"
                 placeholder="Please enter your email"
               />
               <button class="btn">Send</button>
-              <p>Join our newsletter and get coupont 20$</p>
             </div>
             <div class="col-right">
               <img src="assets/img/diamondbeach.jpg" alt="" />
@@ -254,33 +258,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      //navbar in mobile
-      let btn = document.querySelector(".burger-btn");
-      let menu = document.querySelector(".nav-links");
-      let links = document.querySelectorAll(".nav-links li a");
-      btn.addEventListener("click", function () {
-        menu.classList.toggle("nav-active");
-      });
-
-      for (let i = 0; i < links.length; i++) {
-        links[i].addEventListener("click", function () {
-          menu.classList.toggle("nav-active");
-        });
-      }
-
-      //change bg when scroll
-      let navbar = document.querySelector("header");
-
-      window.addEventListener("scroll", function () {
-        let valueScroll = window.scrollY;
-        console.log(valueScroll);
-        if (valueScroll < 70) {
-          navbar.classList.remove("bg-nav-color");
-        } else {
-          navbar.classList.add("bg-nav-color");
-        }
-      });
-    </script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
